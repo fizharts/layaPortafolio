@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>_Lauka | Portfolio_</title>
+    <meta name="description" content="A template with animated columns and a content preview." />
+    <meta name="keywords" content="layout, uidesign, template, css, javascript, columns, grid" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/bml8yys.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css' />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e,
+                t = document.createElement("style");
+            return (
+                (t.innerHTML = "root: { --tmp-var: bold; }"),
+                document.head.appendChild(t),
+                (e = !!(
+                    window.CSS &&
+                    window.CSS.supports &&
+                    window.CSS.supports("font-weight", "var(--tmp-var)")
+                )),
+                t.parentNode.removeChild(t),
+                e
+            );
+        };
+        supportsCssVars() ||
+            alert(
+                "Please view this demo in a modern browser that supports CSS Variables."
+            );
+    </script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="loading flash">
+    <main>
+        <!--  <div class="frame">
+            <div class="frame__title-wrap">
+                <h5 class="titulo__title">Lauka</h5>
+			</div>
+            -->
+
+        <div class="content content--second">
+            <article class="item">
+                <div class="item__img" style="background-image: url(img/laura.png);"></div>
+                <div class="item__content">
+                    <a class="item__content-back">inicio</a>
+                    <h2 class="item__content-title">Acerca de mí</h2>
+                    <h3 class="item__content-subtitle"><a href="pdf/cv_lauragucer.pdf" target="_blank">Ver Pdf</a></h3>
+                    <div class="item__content-text" style="text-align:justify;">
+                        Mi nombre es Laura Gutiérrez Cervantes, nací en Nezahualcoyotl, Estado de México. Desde pequeña he tenido el gusto por los colores, las formas y experimentar con creaciones. Conforme fui creciendo, permanecía mi gusto por la creación de imágenes, así
+                        que decidí estudiar la licenciatura en Diseño y Comunicación Visual en la Facultad de Artes y Diseño de la UNAM. Mientras cursaba la universidad nació mi curiosidad por la animación, ¿cómo era el proceso para la creación de las
+                        animaciones?, así que decidí que mi formación sería orientada hacia el Diseño Multimedia, porque también me han interesado mucho los temas de la Tecnología en el Diseño. Realicé mi servicio social en TvUNAM, en el Departamento
+                        de Imagen Institucional, donde obtuve conocimientos sobre las aplicaciones de diseño para televisión. Después tuve la oportunidad de colaborar en la Dirección General de Comunicación Social (DGCS) de la UNAM, donde elaboraba material
+                        gráfico para las redes sociales de la UNAM, como Facebook, Twitter e Instagram. Mientras colaboraba en la DGCS, cursaba el Programa de becas de "Desarrollo de Medios Audivisuales y Animación 3D" de la Dirección General de Cómputo
+                        y de Tecnologías de Información y Comunicación (DGTIC) de la UNAM. Actualmente laboro en el instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE), donde aplico mis conocimientos de Diseño y Comunicación
+                        Visual.
+
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="item" style="">
+
+
+                <div class="modal" style="overflow-y: auto;">
+                    <div class="modal-contenido">
+
+
+                        <h2 class="tituloModal">Titulo Proyecto
+
+                        </h2>
+
+                        <a href="#">Cerrar</a>
+
+                        <div class="divModal">
+                            <div class="videoModal" style="flex:1;">
+                                <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" id="spinnersito" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                                <div id="galeria" style="width:100%;"></div>
+                                <iframe class="contenedorVideo" src="" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                            </div>
+
+                            <div class="contenidoModal" style="flex:1; text-align:justify;">Contenido</div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="item__content">
+                    <h2 class="item__content-title">Proyectos</h2>
+                    <h3 class="item__content-subtitle">
+                        <a class="item__content-back">inicio</a>
+                    </h3>
+
+                    <div class="contenedorProyectos">
+                        <div class="divsImagen">
+
+                            <img class="galeriaItem redonda" name="uno" width="400" src="img/actualizate_dgtic.jpg" data-liga="https://player.vimeo.com/video/422983994" />
+                            <p class="infoImg" data-video="DGTIC">Actualízate DGTIC</p>
+                            <div class="des" style="visibility: hidden;">
+                                Animación para promocionar los cursos y diplomados que ofrece la Dirección General de Cómputo y de Tecnologías de Información y Comunicación de la UNAM. El proyecto fue realizado en conjunto con compañeros del programas de Becas, donde participé animando
+                                algunas escenas.
+                            </div>
+                        </div>
+
+                        <div class="divsImagen">
+                            <img class="galeriaItem redonda" name="dos" width="400" src="img/recorrido_beatles.jpg" data-liga="https://player.vimeo.com/video/422982512" />
+                            <p class="infoImg">Recorrido virtual, discografía de "The Beatles"</p>
+                            <div class="des" style="visibility: hidden;">
+                                Proyecto personal, donde invito al espectador a dar un paseo por la discografía del cuarteto de Liverpool, creando escenas en 3D de cada disco, pasando por cada una de sus etapas y acompañado de un repertorio musical, que le recordarán el estilo sonoro
+                                y auténtico que creó esta gran banda de Rock.
+                            </div>
+                        </div>
+
+                        <div class="divsImagen">
+                            <img class="galeriaItem redonda" name="tres" width="400" src="img/surrealistas_animacion.jpg" data-liga="https://player.vimeo.com/video/422985505" />
+                            <p class="infoImg">Documental Surrealistas</p>
+                            <div class="des" style="visibility: hidden;">
+                                Documental Realizado para TvUNAM, donde participé animando el fragmento que puedes apreciar. Consiste en mostrar a los escritores y poetas surrealistas en Francia, como André Breton, Ocatvio Paz y Benjamin Péret, así como ilustrar el poema "Noche en claro"
+                                escrito por Octavio Paz e inspirado en su amistad con los escritores mencionados.
+
+
+
+                            </div>
+                        </div>
+                        <div class="divsImagen">
+                            <img class="galeriaItem redonda" name="cuatro" width="400" src="img/telcel_animacion.jpg" data-liga="https://player.vimeo.com/video/422980477" />
+
+                            <p class="infoImg">Promocional para la app "MiTelcel"</p>
+                            <div class="des" style="visibility: hidden;">
+                                Animación para promocionar la aplicación móvil "MiTelcel", donde se explica las funciones que tiene y los beneficios de tenerla en tu smartphone.
+
+                            </div>
+                        </div>
+                        <div class="divsImagen">
+                            <img class="galeriaItem redonda" name="cinco" width="400" src="img/trainspotting_tipografia.jpg" data-liga="https://player.vimeo.com/video/422983225" />
+                            <p class="infoImg">Trainspotting, acomodo tipográfico</p>
+                            <div class="des" style="visibility: hidden;">Ejercicio realizado en el programa de Becas de la DGTIC, UNAM, para aplicar el conocimiento sobre el uso de cámaras en After Effects, así como la animación enlazada con sonido. Me inspiré en el diálogo del personaje Mark Renton
+                                , que aparece al inicio de la película Trainspotting, dirigida por Danny Boyle en 1996.
+
+                            </div>
+                        </div>
+                        <div class="divsImagen">
+                            <img class="galeriaItem redonda" name="seis" width="400" src="img/xv_congreso.jpg" data-liga="" data-carrusel="img/enfermeria/banner_congreso.jpg" />
+                            <p class="infoImg">XV Congreso de Enfermería 2019</p>
+                            <div class="des" style="visibility: hidden;">
+
+                                El Congreso de Enfermería se realiza cada año en el Hospital Regional General Ignacio Zaragoza del ISSSTE, El XV Congreso de Enfermería fue dedicado a los temas de Tecnología en el ámbito de la enfermería, por lo que lema era "La Tecnología aplicada en
+                                el Cuidado Humano. Nuevo paradigma para la enfermería" y en este proyecto participé en la elaboración de la imagen para el evento. Utilicé una paleta de colores que se centra en el color azul y sus tonalidades, debido a
+                                que el azul remite tanto a la tecnología como a la salud.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item__content-text"></div>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item__img" style="background-image: url(img/4.jpg);"></div>
+                <div class="item__content" style="overflow-y:auto; height:auto; overflow-x:hidden;">
+                    <a class="item__content-back">inicio</a>
+                    <h2 class="item__content-title">Contacto</h2>
+                    <div class="item__content-text">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctNpb5GwVYeH_ARUzR9WWlbmdTJGrgIzLESanNAdLR5ICAyQ/viewform?embedded=true" width="640" height="979" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 
+
+					::::::: estas son las  imagenes del fondo:::::::::::::::
+			 -->
+        <div class="content content--first">
+            <div class="content__move">
+                <div class="columns">
+                    <div class="column">
+                        <div class="column__img" style="background-image: url(img/2.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/6.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/13.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/14.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/5.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/6.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/7.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/8.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/9.jpg);"></div>
+                    </div>
+                    <div class="column column--bottom">
+                        <div class="column__img" style="background-image: url(img/3.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/11.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/1.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/15.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/14.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/13.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/12.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/3.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/15.jpg);"></div>
+                    </div>
+                    <div class="column">
+                        <div class="column__img" style="background-image: url(img/7.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/4.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/9.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/11.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/5.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/3.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/2.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/1.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/5.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/14.jpg);"></div>
+                    </div>
+                    <div class="column column--bottom">
+                        <div class="column__img" style="background-image: url(img/1.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/2.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/3.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/7.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/4.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/6.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/5.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/8.jpg);"></div>
+                        <div class="column__img" style="background-image: url(img/10.jpg);"></div>
+                    </div>
+                </div>
+                <!--/columns-->
+                <nav class="menu">
+                    <a class="menu__item">Acerca de mí</a>
+                    <a class="menu__item">Proyectos</a>
+                    <a class="menu__item">Contacto</a>
+                </nav>
+            </div>
+            <!--/content--move-->
+        </div>
+        <!--/content-->
+    </main>
+
+    <div class="cursor">
+        <div class="cursor__inner cursor__inner--circle"></div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+
+    <script src="js/modal.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/bezier-easing.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>

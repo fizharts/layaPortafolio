@@ -1,0 +1,155 @@
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+      .item__content {
+          font-family: 'DM Sans', sans-serif;
+      }
+      
+      .spinner {
+          width: 40px;
+          height: 40px;
+          position: relative;
+          margin: 100px auto;
+      }
+      
+      .double-bounce1,
+      .double-bounce2 {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: rgba(90, 19, 90, 0.9);
+          opacity: 0.6;
+          position: absolute;
+          top: 0;
+          left: 0;
+          -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+          animation: sk-bounce 2.0s infinite ease-in-out;
+      }
+      
+      .double-bounce2 {
+          -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+      }
+      
+      @-webkit-keyframes sk-bounce {
+          0%,
+          100% {
+              -webkit-transform: scale(0.0)
+          }
+          50% {
+              -webkit-transform: scale(1.0)
+          }
+      }
+      
+      @keyframes sk-bounce {
+          0%,
+          100% {
+              transform: scale(0.0);
+              -webkit-transform: scale(0.0);
+          }
+          50% {
+              transform: scale(1.0);
+              -webkit-transform: scale(1.0);
+          }
+      }
+      
+      .galeria>h3 {
+          overflow: hidden;
+      }
+      
+      .galeria>item__content {
+          padding: 1px !important;
+      }
+      
+      .contenedorGaleria {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+      }
+      
+      .contenedorProyectos {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          margin-top: 100px;
+      }
+      
+      .divModal {
+          display: flex!important;
+      }
+      
+      .divsImagen {
+          width: 200px;
+      }
+      
+      .modal-contenido {
+          background-color: white;
+          color: black;
+          width: 75%;
+          padding: 10px 20px;
+          margin: 20% auto;
+          top: -200px !important;
+          position: relative;
+          max-height: 500px;
+          animation-duration: 3s;
+          border-radius: 10px;
+          overflow-y: auto;
+      }
+      
+      .modal {
+          background-color: rgba(0, 0, 0, 0);
+          position: fixed;
+          z-index: 20;
+          animation-duration: 3s;
+          width: 100% !important;
+      }
+      
+      .galeriaItem {
+          margin: -2px !important;
+      }
+      
+      .fondoImagen {
+          background-image: url("img/portfolios/1.jpg");
+          width: 400px !important;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      .infoImg {
+          background-color: rgba(90, 19, 90, 0.9);
+          color: white;
+          border-radius: 10px;
+          text-align: center;
+          padding: 15px;
+          margin-top: -45px;
+          position: relative;
+      }
+      
+      .redonda {
+          -webkit-box-shadow: -3px 3px 0px 2px rgba(84, 26, 84, 1);
+          -moz-box-shadow: -3px 3px 0px 2px rgba(84, 26, 84, 1);
+          box-shadow: -3px 3px 0px 2px rgba(84, 26, 84, 1);
+      }
+      
+      .filtro {
+          -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+          filter: hue-rotate(90deg)
+      }
+      
+      .contenidoModal {
+          padding: 0px 30px 30px 30px;
+          text-justify: justify;
+          font-size: 18px;
+          font-weight: lighter!important;
+      }
+      
+      .imagenesThum {
+          opacity: 0.5;
+      }
+      
+      .imagenesThum:hover {
+          opacity: 1.0;
+      }
+      
+      .imagenesThum:active {
+          opacity: 1.0;
+      }
